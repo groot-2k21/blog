@@ -1,0 +1,9 @@
+[Unit]
+Description=WordpressBlog
+
+[Service]
+RootDirectory=/opt/blog
+ExecStart=docker-compose up -d
+
+[Install]
+WantedBy=multi-user.target
